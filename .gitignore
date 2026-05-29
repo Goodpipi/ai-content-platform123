@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+# 本地 IDE / Cursor，勿提交
+.cursor/
+
+# 参考设计稿（非运行必需，可减小仓库体积）
+src/lovable/
+src/imports/
