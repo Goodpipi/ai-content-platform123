@@ -4,7 +4,7 @@ services:
     name: ai-content-platform
     runtime: node
     plan: free
-    buildCommand: npm install && npm run build
+    buildCommand: NPM_CONFIG_PRODUCTION=false npm install && node scripts/verify-deploy.mjs && npm run build
     startCommand: node server/index.js
     healthCheckPath: /api/health
     envVars:
